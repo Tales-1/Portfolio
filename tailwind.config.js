@@ -18,6 +18,12 @@ module.exports = {
         "lg-2":'1200px',
         "xl": '1440px',
     },
+    colors: {
+      "react": "#61DAFB",
+      "dark" : "#21222A",
+      "light":"#282D35"
+
+    }
     },
   },
   plugins: [],
