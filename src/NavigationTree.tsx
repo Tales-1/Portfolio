@@ -1,14 +1,19 @@
 import { NavLink } from "react-router-dom"
 type Props = {
-    toggleTree:() => void
+    toggleTree: () => void
+    toggleTrans: () => void
 }
 
-const NavigationTree:React.FC<Props> = ({toggleTree}) => {
+const NavigationTree:React.FC<Props> = ({toggleTree, toggleTrans}) => {
 
     let activeStyle = {
         background:"white",
         color:"black",
         fontWeight:"bold"
+    }
+    function toggleFunctions(){
+        toggleTree()
+        toggleTrans()
     }
     const pseudoElementStyles = "relative before:absolute before:left-[49%] before before:w-[2px] before:bg-white before:h-[30%]"
                                
@@ -44,7 +49,7 @@ const NavigationTree:React.FC<Props> = ({toggleTree}) => {
                 </div>
 
                 <div className={`flex row-start-5 col-start-1 before:top-0 ${pseudoElementStyles}`}>
-                    <NavLink onClick={toggleTree} 
+                    <NavLink onClick={toggleFunctions} 
                             to="/" 
                             style={({isActive}) => isActive ? activeStyle : undefined}
                             className="mt-auto mx-auto flex justify-center rounded-md p-2"
@@ -53,7 +58,7 @@ const NavigationTree:React.FC<Props> = ({toggleTree}) => {
                     </NavLink>
                 </div>
                 <div className={`flex row-start-5 col-start-2 before:top-0 ${pseudoElementStyles}`}>
-                    <NavLink onClick={toggleTree} 
+                    <NavLink onClick={toggleFunctions} 
                              to="/about" 
                              style={({isActive}) => isActive ? activeStyle : undefined}
                              className="mt-auto mx-auto flex justify-center rounded-md p-2">
@@ -61,7 +66,7 @@ const NavigationTree:React.FC<Props> = ({toggleTree}) => {
                     </NavLink>
                 </div>
                 <div className={`flex row-start-5 col-start-3 before:top-0 ${pseudoElementStyles}`}>
-                    <NavLink onClick={toggleTree} 
+                    <NavLink onClick={toggleFunctions} 
                              to="/projects" 
                              style={({isActive}) => isActive ? activeStyle : undefined}
                              className="mt-auto mx-auto flex justify-center rounded-md p-2">
@@ -69,7 +74,7 @@ const NavigationTree:React.FC<Props> = ({toggleTree}) => {
                     </NavLink>
                 </div>
                 <div className={`flex row-start-5 col-start-4 before:top-0 ${pseudoElementStyles}`}>
-                    <NavLink onClick={toggleTree} 
+                    <NavLink onClick={toggleFunctions} 
                              to="/contact" 
                              style={({isActive}) => isActive ? activeStyle : undefined}
                              className="mt-auto mx-auto flex justify-center rounded-md p-2">
