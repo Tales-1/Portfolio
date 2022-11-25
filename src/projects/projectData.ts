@@ -17,7 +17,7 @@ interface Data {
 const projectData:Data[] = [
     {
         name:"E-Commerce Shop",
-        description:"My biggest project to date. A dummy e-commerce website based on a business my lovely wife would like start. I have noticeably bought a domain name in anticipation that this business becomes an actuality. ",
+        description:"My biggest project to date. A dummy e-commerce website based on a business my lovely wife would like to start. I have noticeably bought a domain name in anticipation that this business will become an actuality.  ",
         src:ecommerce,
         github:"https://github.com/Tales-1/firebase-e-shop",
         live:"https://www.mibbyfashions.co.uk",
@@ -25,7 +25,7 @@ const projectData:Data[] = [
     },
     {
         name:"RPG Game",
-        description:"A real test of my OOP skills. A turn based RPG game with varying characters and enemy levels. Built after 5 months of working on Javascript. Inspired by my love for RPG games.",
+        description:"Fuelled by my love for RPGs, I created a turn-based RPG with different characters and enemy levels. I thoroughly enjoyed this project, whether it was designing the user interface or putting my object-oriented programming skills to the test.",
         src:rpg,
         github:"https://github.com/Tales-1/RPG-Game",
         live:"https://tales-1.github.io/RPG-Game/",
