@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "poppins":["Poppins", "sans-serif"]
+        "poppins":["Poppins", "sans-serif"],
+        "body":["Lato","sans-serif"]
       },
       screens: {
         "sm-0":"480px",
@@ -22,7 +23,9 @@ module.exports = {
       "react": "#61DAFB",
       "dark" : "#21222A",
       "light":"#282D35"
-
+    },
+    boxShadow:{
+      "card":"0 5px 15px rgba(0,0,0,0.35)"
     }
     },
   },
