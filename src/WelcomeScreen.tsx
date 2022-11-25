@@ -6,17 +6,21 @@ type Props = {
 
 const WelcomeScreen:React.FC<Props> = ({visible}) => { 
     return ( 
-        <div className={`h-screen w-screen absolute top-0 bg-dark ${visible ? "translate-y-0" : "-translate-y-full"} 
-                    transition-all duration-1000 grid place-items-center z-30`}>
+        <div className={`absolute top-0 bg-dark w-screen h-[100vh] ${visible ? "translate-y-0" : "-translate-y-full"}
+                    transition-all text-white duration-500 flex flex-col justify-center items-center gap-4 z-20`}>
                 <ReactOrbit 
                     nucleusSize="text-3xl" 
                     electronSize="w-[20px]" 
                     orbitSize="w-[200px]" 
                     orbitOne="var-x"
                     orbitTwo="var-y"
+                    styles="col-start-4"
                     />
+                    <span className="text-xl font-poppins">Rendering...</span> 
             </div>
     )
 }
 
 export default WelcomeScreen
+
+// 
