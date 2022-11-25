@@ -1,15 +1,31 @@
+import { motion } from "framer-motion"
+type Props = {
+    toggle:() => void
+    visible:boolean
+}
 
-const Contact:React.FC = () => {
+const Contact:React.FC<Props> = ({toggle,visible}) => {
 
     return ( 
-        <section className="border-b-2 border-white h-screen flex w-3/4">
-            <div className="m-auto text-center w-3/4 flex flex-col gap-6">
-                <h2 className="text-3xl lg:text-4xl">Get in Touch</h2>
-                <p className="text-lg">I'm currently looking for new opportunities. Feel free to get in touch </p>
-                <p>icon:jawad.nazir124@gmail.com</p>
-                <p>icon: +447710445094</p>
+        <motion.section 
+            className="relative border-b-2 border-white h-screen grid place-items-center w-full"
+            initial={{opacity:0}}
+            animate={{opacity:1, transition:{duration:0.4, delay:1.2}}}>
+            <div className="w-full">
+                <h1 className="absolute top-8 left-[50%] translate-x-[-50%] text-center font-bold text-3xl lg:text-4xl text-[#8892b0] w-full">&#60;Contact /&gt;</h1>
+                <div className="m-auto text-center flex flex-col gap-6 items-center w-4/5">
+                    <h2 className="text-4xl lg:text-7xl font-poppins font-bold">Get in <span className="text-react">Touch.</span></h2>
+                    <p className="text-lg font-body tracking-wider">I'm currently looking for new opportunities. </p>
+                    <a href="mailto:jawad.nazir248@gmail.com">
+                        <button className="border-2 border-react py-[1.15rem] px-[1.5rem] w-fit mt-10 mb-16 text-react font-bold lg:text-lg cursor-pointer">
+                            Contact Me
+                        </button>
+                    </a>
+                    
+                </div>
             </div>
-        </section>
+            
+        </motion.section>
     )
 }
 
