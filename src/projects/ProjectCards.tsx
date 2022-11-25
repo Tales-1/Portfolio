@@ -32,7 +32,7 @@ const ProjectCards:React.FC = () => {
             >
                     <motion.div className="w-full aspect-[1.2/1] flex flex-col 
                         rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:rounded-bl-lg overflow-hidden
-                        shadow-[0_5px_15px_rgba(0,0,0,0.35)]"
+                        shadow-card"
                         variants={imgMotion}
                         whileTap={{opacity:1}}                   >
                         <img src={src} alt="thumbnail of project" className="object-cover h-full w-full" />
@@ -40,11 +40,15 @@ const ProjectCards:React.FC = () => {
 
                     <motion.div className="grid grid-cols-2 place-items-center bg-dark w-full 
                         rounded-b-lg md:rounded-b-none md:rounded-br-lg md:rounded-tr-lg overflow-hidden
-                        shadow-[0_5px_15px_rgba(0,0,0,0.35)]"
+                        shadow-card"
                         variants={cardMotion}>
-
-                        <h1 className="text-center row-start-1 col-start-1 col-span-full py-3">&#60;{name} /&gt;</h1>
-                        <p className="col-start-1 col-span-full p-6 text-justify row-start-2 md:px-12">{description}</p>
+                        <a href={item.live} target="#" className="text-center row-start-1 col-start-1 col-span-full ">
+                            <h1 className="py-3 font-poppins font-bold underline underline-offset-4 text-react hover:opacity-60">
+                                &#60;{name} /&gt;
+                            </h1>
+                        </a>
+                        
+                        <p className="col-start-1 col-span-full p-6 text-justify row-start-2 md:px-12 font-body">{description}</p>
                         
                         <div className="col-start-2 row-start-3 flex items-center gap-6 ml-auto mr-8">
                             <motion.a href={github} target="#"
