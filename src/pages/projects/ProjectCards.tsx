@@ -1,7 +1,7 @@
 import projectData from "./projectData"
 import { motion } from "framer-motion"
-import GithubIcon from "../assets/github.png"
-import LinkIcon from "../assets/live-link.png"
+import GithubIcon from "../../assets/github.png"
+import LinkIcon from "../../assets/live-link.png"
 import { imgMotion } from "./variants"
 import { cardMotion } from "./variants"
 import { useEffect, useState } from "react"
@@ -48,7 +48,7 @@ const ProjectCards:React.FC = () => {
                             </h1>
                         </a>
                         
-                        <p className="col-start-1 col-span-full p-6 text-justify row-start-2 md:px-12 font-body">{description}</p>
+                        <p className="col-start-1 col-span-full p-6 text-justify row-start-2 md:px-12 font-body text-white">{description}</p>
                         
                         <div className="col-start-2 row-start-3 flex items-center gap-6 ml-auto mr-8">
                             <motion.a href={github} target="#"

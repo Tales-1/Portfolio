@@ -2,13 +2,9 @@ import { motion, useScroll } from "framer-motion"
 import { useEffect, useState } from "react"
 import ProjectCards from "./ProjectCards"
 
-type Props = {
-    toggle:() => void
-    visible:boolean
-}
 
 
-const Projects:React.FC<Props> = ({toggle,visible}) => {
+const Projects:React.FC= () => {
     const [width,setWidth] = useState(window.innerWidth)
     const desktop = width > 1275 
     const { scrollYProgress } = useScroll()
@@ -27,9 +23,10 @@ const Projects:React.FC<Props> = ({toggle,visible}) => {
 
     return (
         <motion.section 
-            className="relative bg-light border-b-2 border-white flex flex-col justify-center gap-16 h-fit py-12 w-full"
-            initial={{opacity:0}}
-            animate={{opacity:1, transition:{duration:0.4, delay:1.2}}}
+            className="relative border-b-2 border-white flex flex-col justify-center gap-16 h-fit py-12 w-full bg-light"
+            initial={{opacity:0, y:-100}}
+            animate={{opacity:1, y:0, transition:{duration:.5,delay:0.5}}}
+            exit={{y:100, opacity:0, transition:{duration:0.5}}}
             >
              <motion.div 
                 className="absolute h-4/5 w-[3px] bg-white left-[50%] top-32 z-0"
