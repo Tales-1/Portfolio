@@ -2,51 +2,38 @@ import { NavLink } from "react-router-dom"
 
 type Props = {
     flex?:string
+    mobile?:boolean
+    closeMenu?:() => void
 }
-const NavLinks:React.FC<Props> = ({flex}) => {
+const NavLinks:React.FC<Props> = ({mobile, closeMenu,flex}) => {
     const activeStyle = {
-        background:"#282D35"
+        borderBottom: mobile ? "0px" : "2px solid #bc9c9e",
+        color:"#bc9c9e"
     }
+    
+    const linkNames = [
+        {name:"Home", link:"/"},
+        {name:"My Story", link:"/about"}, 
+        {name:"Projects", link:"/projects"}, 
+       {name:"Contact",link:"/contact"}]
+
+    const displayLinks = linkNames.map((item) => {
+        return ( 
+            <li onClick={closeMenu}>
+                <NavLink
+                    to={item.link} 
+                    style={({isActive}) => isActive ? activeStyle : undefined}
+                    className="mt-auto mx-auto flex justify-center h-full items-center p-4 font-semibold">
+                        {item.name}
+                </NavLink>
+            </li>
+        )
+    })
 
     return ( 
-        <ul className={`flex justify-evenly w-full h-full text-white ${flex}`}>
-                       <li>
-                            <NavLink
-
-                                    to="/" 
-                                    style={({isActive}) => isActive ? activeStyle : undefined}
-                                    className="mt-auto mx-auto flex justify-center h-full items-center p-4 font-semibold">
-                                Home
-                            </NavLink>
-                        </li> 
-
-                       <li>
-                            <NavLink
-                                to="/about" 
-                                style={({isActive}) => isActive ? activeStyle : undefined}
-                                className="mt-auto mx-auto flex justify-center h-full items-center p-4 font-semibold">
-                                 My Story
-                            </NavLink>
-                        </li>   
-
-                       <li>
-                            <NavLink
-                                to="/projects" 
-                                style={({isActive}) => isActive ? activeStyle : undefined}
-                                className="mt-auto mx-auto flex justify-center h-full items-center p-4 font-semibold">
-                                Projects
-                             </NavLink>
-
-                        </li>   
-                       <li>
-                            <NavLink
-                                to="/contact" 
-                                style={({isActive}) => isActive ? activeStyle : undefined}
-                                className="mt-auto mx-auto flex justify-center h-full items-center p-4 font-semibold">
-                                Contact
-                            </NavLink>
-                        </li>   
-                    </ul>
+             <ul className={`flex justify-evenly w-full h-full text-white ${flex} text-xs md:text-base`}>
+                    {displayLinks}
+            </ul>
     )
 }
 
