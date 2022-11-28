@@ -12,8 +12,6 @@ const Home:React.FC = () => {
         return (
                 <motion.li 
                     className="hover:text-react"
-                    initial={{opacity:0, y:-y}}
-                    animate={{opacity:1, y:0, transition:{delay:delay + 0.8}}}
                     whileHover={{scale:1.5}}>
 
                         <a href={icon.link} target="#">
@@ -26,17 +24,13 @@ const Home:React.FC = () => {
         )
     })
     return ( 
-            <motion.section className="relative flex flex-col w-full h-fit py-8 bg-light"
-                            initial={{opacity:0, y:-100}}
-                            animate={{opacity:1, y:0, transition:{duration:.5,delay:0.5}}}
-                            exit={{y:100, opacity:0, transition:{duration:0.5}}}
-                            >
+            <motion.section className="relative flex flex-col w-full h-[80vh] pb-12" >
                                 
-                <h1 className="text-center font-bold text-3xl lg:text-4xl text-[#8892b0]">
-                    &#60;Home /&gt;
+                <h1 className="text-center font-bold text-3xl lg:text-4xl text-react mt-8">
+                    Home
                 </h1>
-                <motion.div className="m-auto mt-16 lg:justify-center lg:mt-0 flex flex-col lg:items-center w-5/6 max-w-[45rem] h-[75vh]">
-                    <motion.h2 className="text-5xl md:text-6xl lg:text-[5.8rem] font-bold font-poppins text-white"
+                <motion.div className="m-auto mt-16 lg:justify-center lg:mt-0 flex flex-col md:items-center max-w-[45rem] lg:h-[70vh] w-4/5">
+                    <motion.h2 className="text-6xl lg:text-[5rem] font-bold font-poppins text-title"
                              initial={{opacity:0, y:y}}
                              animate={{opacity:1, y:0, transition:{delay:delay + 0.1, duration:duration}}}
                     >
@@ -56,21 +50,16 @@ const Home:React.FC = () => {
                          >
                         Frontend Developer
                     </motion.span>
-                    <motion.p 
-                         className="mt-12 max-w-[75ch] leading-7 lg:text-center lg:text-lg font-body tracking-wide text-white"
-                         initial={{opacity:0, y:y}}
-                         animate={{opacity:1, y:0, transition:{delay:delay + 0.4, duration:duration}}}
-                     >I'm a former Arabic Language Teacher and Community Development Officer.
-                     <motion.span 
-                         className="block"
+                     <motion.p 
+                         className="block text-[#282d35] md:text-center mt-12 font-semibold md:w-[65ch] leading-8"
                          initial={{opacity:0, y:y}}
                          animate={{opacity:1, y:0, transition:{delay:delay + 0.5, duration:duration}}}
                          > 
                          As a Front-End developer my focus is now geared towards creating simple, appealing and intuitive web applications
-                     </motion.span>
-                    </motion.p>
+                     </motion.p>
+                   
                     <motion.div 
-                         className="border-2 border-react p-[1rem] w-fit mt-16 text-react lg:text-lg cursor-pointer"
+                         className="border-2 border-react p-[1rem] w-fit mt-16 text-[#282d35] lg:text-lg cursor-pointer"
                          initial={{opacity:0, y:y}} 
                          animate={{opacity:1, y:0, transition:{delay:delay + 0.6, duration:duration}}}
                     >
@@ -79,13 +68,17 @@ const Home:React.FC = () => {
                           </Link>
                     </motion.div>
                 </motion.div>
-                <ul className="fixed bottom-4 left-[50%] translate-x-[-50%] flex w-3/5 max-w-[25rem] justify-evenly items-center gap-2 mx-auto">
-                    {displayIcons}
-                </ul>
-                {/* <h4 className="font-poppins fixed
-                    right-0 bottom-0 z-10 text-[0.75rem] md:text-[0.78rem] lg:text-sm lg:m-3 text-white">
-                        Designed & built with <span className="text-red-500">&#10084;</span> by<span className="text-"> Jawad Nazir.</span>
-                 </h4> */}
+                    <motion.ul className="flex w-full justify-evenly items-center max-w-[25rem] gap-2 m-auto p-3 bg-[#3b4f4f] rounded-xl
+                               relative top-8
+                    "
+                                initial={{opacity:0, y:-y}}
+                                animate={{opacity:1, y:0, transition:{delay:delay + 0.8}}}
+                    >
+                        {displayIcons}
+                     </motion.ul>  
+                <h4 className="font-poppins fixed right-0 bottom-0 z-10 text-[0.75rem] lg:m-3 text-white">
+                        Designed & built with <span className="text-red-500">&#10084;</span> by<span className="text-react"> Jawad Nazir.</span>
+                 </h4>
             </motion.section>
     )
 }
