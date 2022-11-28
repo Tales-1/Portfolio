@@ -16,7 +16,6 @@ const WelcomeScreen:React.FC<Props> = ({visible}) => {
                     orbitTwo="var-y"
                     styles="col-start-4"
                     />
-                    <span className="text-xl font-poppins">Rendering...</span> 
             </div>
     )
 }

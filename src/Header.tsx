@@ -1,33 +1,34 @@
-import NavigationTree from "./NavigationTree"
+import Hamburger from "./assets/white-hamburger.png"
+import NavLinks from "./NavLinks"
 import { useState } from "react"
-import { motion } from "framer-motion"
+import SlidingMenu from "./SlidingMenu"
 
-type Props = { 
-    toggleTrans:() => void
-}
-const Header:React.FC<Props> = ({toggleTrans}) => {
-    const [showTree, setShowTree] = useState(false)
-    function toggleTree(){
-        if(showTree){
-            setTimeout(()=> setShowTree(prev => !prev),500)
-        } else { setShowTree(prev => !prev)}
-        
-    }
+const Header:React.FC = () => {
+    const [width,setWidth] = useState(window.innerWidth)
+    const [visible,setVisible] = useState(false)
+    window.addEventListener("resize", () => {
+        setWidth(window.innerWidth)
+        if(!mobile) setVisible(false)
+    })
+    
+
+    let mobile = width < 550
+
     return ( 
-        <motion.header 
-             className={`w-screen text-react h-[10vh] bg-dark grid grid-flow-col gap-12
-              overflow-hidden relative`}
-             animate={{height:showTree ? "100vh" : "10vh", transition:{type:"spring",stiffness:50}}}> 
-            
-             <div className="flex flex-col gap-2 mt-4 text-center">
-                 <span className="lg:text-xl">Virtual DOM</span>
-                 <button className="text-xs lg:text-base underline hover:opacity-40 text-white" onClick={toggleTree}>
-                 {showTree ? "Hide" : "Show"}
-                 </button>
-            </div>
-            
-            <NavigationTree toggleTree={toggleTree} toggleTrans={toggleTrans} />
-        </motion.header>
+        <>
+        <header className={`w-screen  flex gap-4 relative h-[10vh] `}>  
+            <nav className="m-auto w-5/6 max-w-[40rem]">
+             {mobile ? 
+                <img src={Hamburger} alt="hamburger" onClick={()=>setVisible(true)} 
+                     className="w-6 m-right"
+                /> : <NavLinks /> }
+                
+            </nav>
+           
+        </header>
+        <SlidingMenu translateX={visible ? "translate-x-0" : "-translate-x-full"} close={()=>setVisible(false)} />
+        </>
+        
     )
 }
 

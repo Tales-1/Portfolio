@@ -1,8 +1,8 @@
-import ecommerce from "../assets/Mibbyfashions.png"
-import rpg from "../assets/RpgGame.png"
-import wordl from "../assets/WordlSlang.png"
-import quiz from "../assets/Quizzical.png"
-import tictactoe from "../assets/TicTacToe.png"
+import ecommerce from "../../assets/Mibbyfashions.png"
+import rpg from "../../assets/RpgGame.png"
+import wordl from "../../assets/WordlSlang.png"
+import quiz from "../../assets/Quizzical.png"
+import tictactoe from "../../assets/TicTacToe.png"
 
 
 interface Data { 

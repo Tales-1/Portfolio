@@ -20,7 +20,7 @@ module.exports = {
         "xl": '1440px',
     },
     colors: {
-      "react": "#61DAFB",
+      "react": "#61dafb",
       "dark" : "#21222A",
       "light":"#282D35"
     },
