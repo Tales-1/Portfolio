@@ -20,9 +20,11 @@ module.exports = {
         "xl": '1440px',
     },
     colors: {
-      "react": "#61dafb",
+      "title":"#282d35",
+      "react": "#908a83",
       "dark" : "#21222A",
-      "light":"#282D35"
+      "light":"#f5f7f2",
+      "body":"#3b4f4f"
     },
     boxShadow:{
       "card":"0 5px 15px rgba(0,0,0,0.35)"
