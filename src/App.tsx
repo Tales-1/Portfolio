@@ -15,11 +15,10 @@ const App:React.FC = () => {
     setTimeout(() => setVisible(false),1500)
     console.log(visible)
     return (
-            <div className="relative flex flex-col min-h-[100vh] z-0 w-full bg-light">
-                <WelcomeScreen visible={visible} />
+            <div className="relative flex flex-col min-h-[100vh] z-0 w-full bg-[#3b4f4f]">
+                
                 <Header  />
-                    <main className=" flex flex-col items-center z-10 h-[90vh]">
-                        <AnimatePresence>
+                    <main className="flex flex-col items-center z-10 w-full lg:w-[70%] mx-auto bg-light lg:rounded-xl shadow-card">
                             <Routes location={location} key={location.pathname}> 
                                 <Route path="/">
                                     <Route index element={<Home />} />
@@ -29,7 +28,7 @@ const App:React.FC = () => {
                                 </Route>
 
                             </Routes>
-                        </AnimatePresence>
+                       
                     </main>
                    
             </div>
