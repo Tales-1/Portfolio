@@ -22,23 +22,20 @@ const Projects:React.FC= () => {
     },[])
 
     return (
-        <motion.section 
-            className="relative border-b-2 border-white flex flex-col justify-center gap-16 h-fit py-12 w-full bg-light"
-            initial={{opacity:0, y:-100}}
-            animate={{opacity:1, y:0, transition:{duration:.5,delay:0.5}}}
-            exit={{y:100, opacity:0, transition:{duration:0.5}}}
+        <section 
+            className="relative flex flex-col justify-center gap-16 h-fit w-full pb-12"
             >
              <motion.div 
                 className="absolute h-4/5 w-[3px] bg-white left-[50%] top-32 z-0"
                 initial={{scaleY:0}}
                 style={{scaleY:scrollYProgress, originY:"top"}}>
-                </motion.div>
+            </motion.div>
                 
-                <h1 className="text-center font-bold text-3xl lg:text-4xl text-[#8892b0]">&#60;Projects /&gt;</h1>
-                <ul className="grid justify-center w-full gap-12 z-10">
-                    <ProjectCards />
-                </ul>
-        </motion.section>
+            <h1 className="mt-8 text-center font-bold text-3xl lg:text-4xl text-react">Projects</h1>
+            <ul className="grid justify-center w-full gap-12 z-10">
+                <ProjectCards />
+            </ul>
+        </section>
     )
 }
 
