@@ -4,8 +4,6 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Projects from "./pages/projects/Projects"
 import Contact from "./pages/Contact"
-import WelcomeScreen from "./WelcomeScreen"
-import { AnimatePresence } from "framer-motion"
 import Header from "./Header"
 
 const App:React.FC = () => {
@@ -30,7 +28,7 @@ const App:React.FC = () => {
                             </Routes>
                        
                     </main>
-                   
+                
             </div>
         
        

@@ -17,9 +17,9 @@ const NavLinks:React.FC<Props> = ({mobile, closeMenu,flex}) => {
         {name:"Projects", link:"/projects"}, 
        {name:"Contact",link:"/contact"}]
 
-    const displayLinks = linkNames.map((item) => {
+    const displayLinks = linkNames.map((item,i) => {
         return ( 
-            <li onClick={closeMenu}>
+            <li onClick={closeMenu} key={i}>
                 <NavLink
                     to={item.link} 
                     style={({isActive}) => isActive ? activeStyle : undefined}
@@ -31,7 +31,7 @@ const NavLinks:React.FC<Props> = ({mobile, closeMenu,flex}) => {
     })
 
     return ( 
-             <ul className={`flex justify-evenly w-full h-full text-white ${flex} text-xs md:text-base`}>
+             <ul className={`flex justify-evenly w-full h-full text-white ${flex} text-lg md:text-base`}>
                     {displayLinks}
             </ul>
     )

@@ -47,18 +47,18 @@ const ProjectCards:React.FC = () => {
                             </h1>
                         </a>
                         
-                        <p className="col-start-1 col-span-full text-sm lg:text-base p-6 text-justify row-start-2 md:px-12 font-body text-light leading-7">
+                        <p className="col-start-1 col-span-full text-sm lg:text-base p-8 text-justify row-start-2 md:px-12 font-body text-light leading-7">
                             {description}
                         </p>
                         
-                        <div className="col-start-2 row-start-3 flex items-center gap-6 ml-auto mr-8">
+                        <div className="col-start-2 row-start-3 flex items-center gap-6 ml-auto mr-8 md:mr-12">
                             <motion.a href={github} target="#"
                                 whileHover={{rotateZ:[0,20,-20,20,0],transition:{repeat:Infinity,duration:1}}}>
-                                <img src={GithubIcon} alt="github logo" className="w-5 lg:w-8" />
+                                <img src={GithubIcon} alt="github logo" className="w-5 lg-2:w-8" />
                             </motion.a>
                             <motion.a href={live} target="#" className=""
                                 whileHover={{rotateZ:[0,20,-20,20,0],transition:{repeat:Infinity,duration:1}}}>
-                                <img src={LinkIcon} alt="link logo" className="w-4 lg:w-6"/>
+                                <img src={LinkIcon} alt="link logo" className="w-4 lg-2:w-6"/>
                             </motion.a>
                         </div>
                         
