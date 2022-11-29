@@ -5,7 +5,7 @@ import { iconsArray } from "../assets/iconsArray"
 
 const Home:React.FC = () => {
     let y = -30
-    let delay = 0.7
+    let delay = 0.1
     let duration = 0.2
 
     const displayIcons = iconsArray.map((icon) => {
@@ -55,7 +55,7 @@ const Home:React.FC = () => {
                          initial={{opacity:0, y:y}}
                          animate={{opacity:1, y:0, transition:{delay:delay + 0.5, duration:duration}}}
                          > 
-                         As a Front-End developer my focus is now geared towards creating simple, appealing and intuitive web applications
+                        Creating clean and simple web applications, one at a time.
                      </motion.p>
                    
                     <motion.div 

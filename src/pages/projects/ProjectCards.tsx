@@ -25,12 +25,12 @@ const ProjectCards:React.FC = () => {
         const displayTools = tools.map((tool,i) => <li className="text-light" key={i}>{tool}</li>)
 
         return (
-            <motion.li className="flex flex-col lg-2:flex-row max-w-[70rem] w-3/5 lg-2:w-5/6 m-auto"
+            <motion.li className="flex flex-col lg-2:flex-row max-w-[70rem] w-4/5 sm:w-3/5 lg-2:w-5/6 m-auto"
                         initial="rest" whileHover="hover" key={i}
                         animate= {desktop ? "restDesktop" : "rest"}>
 
                     <motion.div className="w-full aspect-[1.2/1] flex flex-col 
-                        rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:rounded-bl-lg overflow-hidden
+                        rounded-t-lg lg-2:rounded-t-none lg-2:rounded-tl-lg lg-2:rounded-bl-lg overflow-hidden
                         shadow-card"
                         variants={imgMotion}
                         whileTap={{opacity:1}}                   >
@@ -38,7 +38,7 @@ const ProjectCards:React.FC = () => {
                     </motion.div>
 
                     <motion.div className="grid grid-cols-2 place-items-center bg-title w-full 
-                        rounded-b-lg md:rounded-b-none md:rounded-br-lg md:rounded-tr-lg overflow-hidden
+                        rounded-b-lg lg-2:rounded-b-none lg-2:rounded-br-lg lg-2:rounded-tr-lg overflow-hidden
                         shadow-card"
                         variants={cardMotion}>
                         <a href={item.live} target="#" className="text-center row-start-1 col-start-1 col-span-full">
@@ -54,16 +54,17 @@ const ProjectCards:React.FC = () => {
                         <div className="col-start-2 row-start-3 flex items-center gap-6 ml-auto mr-8">
                             <motion.a href={github} target="#"
                                 whileHover={{rotateZ:[0,20,-20,20,0],transition:{repeat:Infinity,duration:1}}}>
-                                <img src={GithubIcon} alt="github logo" className="w-8" />
+                                <img src={GithubIcon} alt="github logo" className="w-5 lg:w-8" />
                             </motion.a>
                             <motion.a href={live} target="#" className=""
                                 whileHover={{rotateZ:[0,20,-20,20,0],transition:{repeat:Infinity,duration:1}}}>
-                                <img src={LinkIcon} alt="link logo" className="w-6"/>
+                                <img src={LinkIcon} alt="link logo" className="w-4 lg:w-6"/>
                             </motion.a>
                         </div>
                         
-                        <ul className="row-start-4 col-start-1 col-span-full flex flex-wrap
-                        gap-6 justify-center bg-body w-full p-6 mt-6 self-end text-xs lg-2:text-base">
+                        
+                        <ul className="row-start-4 col-start-1 col-span-full flex flex-wrap gap-8 justify-center
+                                     bg-body w-full p-6 mt-6 self-end text-xs lg-2:text-sm">
                             {displayTools}
                         </ul>
 
