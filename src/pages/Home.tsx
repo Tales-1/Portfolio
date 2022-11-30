@@ -34,8 +34,7 @@ const Home:React.FC = () => {
                 <motion.div className="m-auto mt-16 lg:justify-center lg:mt-0 flex flex-col md:items-center max-w-[45rem] lg:h-[70vh] w-4/5">
                     <motion.h2 className="text-6xl lg:text-[5rem] font-bold font-poppins text-title"
                              initial={{opacity:0, y:y}}
-                             animate={{opacity:1, y:0, transition:{delay:delay + 0.1, duration:duration}}}
-                    >
+                             animate={{opacity:1, y:0, transition:{delay:delay + 0.1, duration:duration}}}>
                         <motion.span 
                              className="block text-base lg:text-lg text-react"
                              initial={{opacity:0, y:y}}
@@ -55,8 +54,7 @@ const Home:React.FC = () => {
                      <motion.p 
                          className="block text-[#282d35] md:text-center mt-12 font-semibold md:w-[65ch] lg:text-lg"
                          initial={{opacity:0, y:y}}
-                         animate={{opacity:1, y:0, transition:{delay:delay + 0.5, duration:duration}}}
-                         > 
+                         animate={{opacity:1, y:0, transition:{delay:delay + 0.5, duration:duration}}}> 
                         A Developer with a passion for creating simple and intuitive web experiences. <br />
                         <span className="mt-2 block">I'm currently seeking a role as a Front-End Developer.</span>
                      </motion.p>
