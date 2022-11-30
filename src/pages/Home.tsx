@@ -62,8 +62,9 @@ const Home:React.FC = () => {
                      </motion.p>
                    
                     <motion.button 
-                         className="relative p-[1rem] w-fit mt-16 text-white before:border-2 before:border-react lg:text-lg cursor-pointer
-                                    before:absolute before:w-full before:h-full bg-body before:left-[4px] before:bottom-[4px]
+                         className="relative p-[1rem] w-fit mt-16 text-white before:border-2 before:border-react lg:text-lg 
+                                    cursor-pointer before:absolute before:w-full before:h-full bg-body before:left-[4px] before:bottom-[4px]
+                                    rounded-lg before:rounded-lg
                                     "
                          initial={{opacity:0,  y:y}} 
                          animate={{opacity:1, y:0,rotateX:"-5deg", transition:{delay:delay + 0.6, duration:duration}}}
