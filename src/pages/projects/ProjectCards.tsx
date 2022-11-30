@@ -5,6 +5,7 @@ import LinkIcon from "../../assets/live-link.png"
 import { imgMotion } from "./variants"
 import { cardMotion } from "./variants"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 const ProjectCards:React.FC = () => { 
     const [width, setWidth] = useState(window.innerWidth)
@@ -41,24 +42,27 @@ const ProjectCards:React.FC = () => {
                         rounded-b-lg lg-2:rounded-b-none lg-2:rounded-br-lg lg-2:rounded-tr-lg overflow-hidden
                         shadow-card"
                         variants={cardMotion}>
-                        <a href={item.live} target="#" className="text-center row-start-1 col-start-1 col-span-full">
-                            <h1 className="py-3 font-poppins font-bold underline underline-offset-4 text-light hover:opacity-60">
-                                {name}
-                            </h1>
-                        </a>
+                        <h1 className="py-3 font-poppins font-bold underline underline-offset-4 text-light text-center row-start-1 col-start-1 col-span-full">
+                            {name}
+                        </h1>
+                        
                         
                         <p className="col-start-1 col-span-full text-sm lg:text-base p-8 text-justify row-start-2 md:px-12 font-body text-light leading-7">
                             {description}
                         </p>
                         
+                        <Link to={`/projects/${item.pageRoute}`} className="row-start-3 text-white ml-8 md:ml-12 self-center 
+                            justify-self-start underline underline-offset-4 text-xs lg:text-[.9rem] hover:opacity-80">
+                            Read more
+                        </Link>
                         <div className="col-start-2 row-start-3 flex items-center gap-6 ml-auto mr-8 md:mr-12">
                             <motion.a href={github} target="#"
                                 whileHover={{rotateZ:[0,20,-20,20,0],transition:{repeat:Infinity,duration:1}}}>
-                                <img src={GithubIcon} alt="github logo" className="w-5 lg-2:w-8" />
+                                <img src={GithubIcon} alt="github logo" className="w-5 lg-2:w-7" />
                             </motion.a>
                             <motion.a href={live} target="#" className=""
                                 whileHover={{rotateZ:[0,20,-20,20,0],transition:{repeat:Infinity,duration:1}}}>
-                                <img src={LinkIcon} alt="link logo" className="w-4 lg-2:w-6"/>
+                                <img src={LinkIcon} alt="link logo" className="w-4 lg-2:w-[1.4rem]"/>
                             </motion.a>
                         </div>
                         
