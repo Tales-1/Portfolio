@@ -27,7 +27,7 @@ const projectData:Data[] = [
         description:"My biggest project to date. A dummy e-commerce website based on a business my lovely wife would like to start. I have noticeably bought a domain name in anticipation that this business will become an actuality.  ",
         src:ecommerce,
         github:"https://github.com/Tales-1/firebase-e-shop",
-        live:"https://www.mibbyfashions.co.uk",
+        live:"https://mibbyfashions.co.uk",
         tools:["React","TailwindCSS","Typescript","Redux","RR6","Firebase","Auth","Framer Motion","Cloudinary"],
         dates:"October 22 - November 16 2022",
         motive:"I was looking for a killer project. One that would really put my React skills to the test. Having just come back from an (unintentional) two month coding break, I was inspired by one person, My wife. For a while she had wanted sell asian clothes. So I thought to myself, why not build a full stack e-commerce website? While the end product is still some ways from initial aim, it definitely comes close and I will surely return to deploy this app once it is ready for production.",
