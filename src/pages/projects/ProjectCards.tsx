@@ -29,7 +29,7 @@ const ProjectCards:React.FC = () => {
             <motion.li className="flex flex-col lg-2:flex-row max-w-[70rem] w-4/5 sm:w-3/5 lg-2:w-5/6 m-auto"
                         initial="rest" whileHover="hover" key={i}
                         animate= {desktop ? "restDesktop" : "rest"}>
-
+                            
                     <motion.div className="w-full aspect-[1.2/1] flex flex-col 
                         rounded-t-lg lg-2:rounded-t-none lg-2:rounded-tl-lg lg-2:rounded-bl-lg overflow-hidden
                         shadow-card"

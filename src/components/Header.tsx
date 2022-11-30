@@ -7,11 +7,11 @@ import Blur from "./Blur"
 const Header:React.FC = () => {
     const [width,setWidth] = useState(window.innerWidth)
     const [visible,setVisible] = useState(false)
+
     window.addEventListener("resize", () => {
         setWidth(window.innerWidth)
         if(!mobile) setVisible(false)
     })
-    
 
     let mobile = width < 550
 

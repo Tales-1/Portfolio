@@ -15,7 +15,8 @@ const NavLinks:React.FC<Props> = ({mobile, closeMenu,flex}) => {
         {name:"Home", link:"/"},
         {name:"My Story", link:"/about"}, 
         {name:"Projects", link:"/projects"}, 
-       {name:"Contact",link:"/contact"}]
+        {name:"Contact",link:"/contact"}
+    ]
 
     const displayLinks = linkNames.map((item,i) => {
         return ( 
@@ -31,7 +32,7 @@ const NavLinks:React.FC<Props> = ({mobile, closeMenu,flex}) => {
     })
 
     return ( 
-             <ul className={`flex justify-evenly w-full h-full text-white ${flex} text-lg md:text-base`}>
+            <ul className={`flex justify-evenly w-full h-full text-white ${flex} text-lg md:text-base`}>
                     {displayLinks}
             </ul>
     )
