@@ -51,7 +51,7 @@ const Home:React.FC = () => {
                             Frontend Developer
                         </motion.span>
                          <motion.p 
-                             className="block text-[#282d35] md:text-center mt-12 font-semibold md:w-[50ch] lg-2:w-[65ch] lg:text-lg"
+                             className="block text-[#282d35] md:text-center mt-12 md:w-[50ch] lg-2:w-[65ch] lg:text-lg"
                              initial={{opacity:0, y:y}}
                              animate={{opacity:1, y:0, transition:{delay:delay + 0.5, duration:duration}}}> 
                             A Developer with a passion for creating simple and intuitive web experiences. <br />
