@@ -15,7 +15,7 @@ const Contact:React.FC= () => {
                     <motion.button 
                          className="relative p-[1rem] w-fit mt-16 text-white before:border-2 before:border-react lg:text-lg cursor-pointer
                                     before:absolute before:w-full before:h-full bg-body before:left-[4px] before:bottom-[4px]
-                                    "
+                                    rounded-lg before:rounded-lg"
                          whileHover={{scale:1.2, opacity:1, zIndex:20}}
                     >
                        Contact
