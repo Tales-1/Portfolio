@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-
+import Logo from "../assets/jnlogo.png"
 type Props = {
     flex?:string
     mobile?:boolean
@@ -24,17 +24,17 @@ const NavLinks:React.FC<Props> = ({mobile, closeMenu,flex}) => {
                 <NavLink
                     to={item.link} 
                     style={({isActive}) => isActive ? activeStyle : undefined}
-                    className="mt-auto mx-auto flex justify-center h-full items-center p-4 font-semibold">
+                    className="mt-auto ml-auto flex justify-center h-full items-center p-4 font-semibold">
                         {item.name}
                 </NavLink>
             </li>
         )
     })
 
-    return ( 
-            <ul className={`flex justify-evenly w-full h-full text-white ${flex} text-sm md:text-base`}>
-                    {displayLinks}
-            </ul>
+    return (
+            <ul className={`flex justify-center h-full gap-8 text-white ${flex} text-sm md:text-base`}>
+                {displayLinks}
+            </ul>  
     )
 }
 

@@ -24,7 +24,7 @@ const projectData:Data[] = [
     {
         name:"E-Commerce Shop",
         pageRoute:"e-commerce-shop",
-        description:"My biggest project to date. A dummy e-commerce website based on a business my lovely wife would like to start. I have noticeably bought a domain name in anticipation that this business will become an actuality.  ",
+        description:"My most ambitious endeavour to date. A dummy e-commerce website based on a business my lovely wife would like to start. I have noticeably bought a domain name in anticipation that this business will become an actuality.  ",
         src:ecommerce,
         github:"https://github.com/Tales-1/firebase-e-shop",
         live:"https://mibbyfashions.co.uk",
@@ -52,7 +52,7 @@ const projectData:Data[] = [
     {
         name:"Wordl Slang Game",
         pageRoute:"wordl-slang-game",
-        description:"Back when Wordle went viral. After a month of learning Javascript I decided to make my own variant of this popular game, completely from scratch, and without referring to tutorials. This is my favourite projects to date.",
+        description:"Back when Wordle went viral. After a month of learning Javascript I decided to make my own variant of this popular game, completely from scratch, and without referring to tutorials. This is my favourite project to date.",
         src:wordl,
         github:"https://github.com/Tales-1/WordlSlangEdition",
         live:"https://tales-1.github.io/WordlSlangEdition/",
@@ -66,7 +66,7 @@ const projectData:Data[] = [
     {
         name:"Quiz App",
         pageRoute:"quiz-app",
-        description:"A project featured in Scrimba's React basics course. My first 'major' React project dealing with fetching data and sorting it accordingly.",
+        description:"A challenge featured in Scrimba's React basics course. My first 'major' React project dealing with fetching data and sorting it accordingly.",
         src:quiz,
         github:"https://github.com/Tales-1/MyTriviaAppProject",
         live:"https://tales-1.github.io/MyTriviaAppProject/",
