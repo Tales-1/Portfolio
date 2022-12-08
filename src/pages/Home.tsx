@@ -51,7 +51,7 @@ const Home:React.FC = () => {
                             <span className="mt-2 block">I'm currently seeking a role as a Front-End Developer.</span>
                          </motion.p>
 
-                        <motion.a href={require('../assets/CV-jawad.pdf')} download="Resume.pdf"
+                        <motion.a href={require('../assets/jawad-CV.pdf')} download="Resume.pdf"
                              className="relative p-[1rem] w-fit mt-16 text-white before:border-2 before:border-react lg:text-lg 
                                         cursor-pointer before:absolute before:w-full before:h-full bg-body before:left-[4px] before:bottom-[4px]
                                         rounded-lg before:rounded-lg shadow-card
