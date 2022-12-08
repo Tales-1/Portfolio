@@ -41,7 +41,7 @@ const Home:React.FC = () => {
                              className="text-xl md:text-3xl lg:text-[2rem] text-react mt-2 font-poppins underline underline-offset-8 decoration-dashed"
                              initial={{opacity:0, y:y}}
                              animate={{opacity:1, y:0, transition:{delay:delay + 0.3, duration:duration}}}>
-                            Frontend Developer
+                            Front-End Developer
                         </motion.span>
                          <motion.p 
                              className="text-sm md:text-base block text-[#282d35] md:text-center mt-12 md:w-[50ch] lg-2:w-[65ch] lg:text-lg"

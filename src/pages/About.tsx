@@ -7,7 +7,7 @@ const About:React.FC = () => {
 
     return ( 
             <section className="relative flex flex-col">
-                <h1 className="mt-8 text-center font-bold text-3xl lg:text-4xl text-react underline underline-offset-8">About</h1>
+                <h1 className="mt-8 text-center font-bold text-3xl lg:text-4xl text-react underline underline-offset-8">My Story</h1>
                 <div className="flex flex-col-reverse w-3/4 max-w-[90rem] m-auto mt-16 pb-12 md:flex-row relative gap-14">
                     <motion.div 
                         className="relative w-3/5 max-w-[22rem] m-auto aspect-square border-2 border-react rounded-md"
@@ -32,7 +32,7 @@ const About:React.FC = () => {
                         <p className="text-sm lg:text-[1.1rem] font-body tracking-[.5px] leading-6 text-black">
                             Hello! I'm Jawad Nazir and I enjoy building web applications. My passion for web development surfaced in November 2021 when, out of curiosity, I decided to try HTML and CSS. A week later, that curiosity whirled into a new-found passion.<br/><br/>
                             In January 2022, I made a significant advancement in my learning when I enrolled in freeCodeCamp's JavaScript course. After a month of intense study, I leapt from pure theory to practice and haven't looked back.<br/><br/> 
-                            From learning how to create a calculator, to creating a miniature role-playing game using Vanilla JS, to building a near-complete e-commerce app in React, I've demonstrated a hunger to learn and the capacity to solve problems effectively. I'm currently looking for a job in the technical field as a front-end developer.
+                            My passion and dedication to learning has led me from making calculators in vanilla JS to building a full-stack e-commerce website 10 months later! As a highly self-motivated individual, I am always seeking new challenges and projects to take on. 
                         </p>
                     </motion.div>
                 </div>
