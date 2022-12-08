@@ -1,11 +1,9 @@
-import Menu from "../assets/menu-white.png"
 import NavLinks from "./NavLinks"
 import { useState } from "react"
 import { motion } from "framer-motion"
 import SlidingMenu from "./SlidingMenu"
 import Blur from "./Blur"
 import Logo from "../assets/jnlogo.png"
-import Hamburger from "../assets/white-hamburger.png"
 
 const Header:React.FC = () => {
     const [width,setWidth] = useState(window.innerWidth)
