@@ -1,23 +1,12 @@
 import { useState } from "react"
+type Props = {
+  handleSubmit:() => void
+}
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/e93194f0-72f8-11ed-a126-b172cf164538"; // TODO - fill on the later step
 
-const ContactForm = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
-  };
-
-  if (submitted) {
-    return (
-      <>
-        <div className="text-2xl text-body">Thank you!</div>
-        <div className="text-md text-body">We'll be in touch soon.</div>
-      </>
-    );
-  }
+const ContactForm:React.FC<Props> = ({handleSubmit}) => {
+ 
   return (
     <form
       action={FORM_ENDPOINT}
@@ -54,7 +43,7 @@ const ContactForm = () => {
       </div>
       <div className="mt-8 pt-0">
         <button
-          className="bg-react text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          className="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
           type="submit">
           Send a message
         </button>

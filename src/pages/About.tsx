@@ -31,7 +31,7 @@ const About:React.FC = () => {
 
                         <p className="text-sm lg:text-[1.1rem] font-body tracking-[.5px] leading-6 text-black">
                             Hello! I'm Jawad Nazir and I enjoy building web applications. My passion for web development surfaced in November 2021 when, out of curiosity, I decided to try HTML and CSS. A week later, that curiosity whirled into a new-found passion.<br/><br/>
-                            In January 2022, I made a significant advancement in my learning when I enrolled in freeCodeCamp's JavaScript course. After a month of intense study, I leaped from pure theory to practice and haven't looked back.<br/><br/> 
+                            In January 2022, I made a significant advancement in my learning when I enrolled in freeCodeCamp's JavaScript course. After a month of intense study, I leapt from pure theory to practice and haven't looked back.<br/><br/> 
                             From learning how to create a calculator, to creating a miniature role-playing game using Vanilla JS, to building a near-complete e-commerce app in React, I've demonstrated a hunger to learn and the capacity to solve problems effectively. I'm currently looking for a job in the technical field as a front-end developer.
                         </p>
                     </motion.div>

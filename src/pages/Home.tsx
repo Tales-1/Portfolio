@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { iconsArray } from "../assets/iconsArray"
-import Logo from "../assets/jnlogo.png"
 
 const Home:React.FC = () => {
     let y = -30
@@ -18,9 +16,6 @@ const Home:React.FC = () => {
                             <img src={icon.src} alt={icon.alt} className="w-5 lg:w-[1.8rem]" />
                         </a>
                 </motion.li>
-            
-                
-           
         )
     })
     return ( 
