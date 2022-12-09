@@ -13,7 +13,7 @@ const ContactForm:React.FC<Props> = ({handleSubmit}) => {
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
-      className="w-full max-w-[30rem] mt-4"
+      className="w-full pb-4"
     >
       <div className="mb-3 pt-0">
         <input

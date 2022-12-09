@@ -18,6 +18,8 @@ module.exports = {
         "lg": '996px',
         "lg-2":'1200px',
         "xl": '1440px',
+        "2xl":"1920px",
+        "lt":{'raw':'(max-width: 1200px),(max-height: 750px)'},
     },
     colors: {
       "title":"#282d35",
