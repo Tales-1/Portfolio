@@ -10,7 +10,7 @@ const Contact:React.FC= () => {
         }, 100);
       };
     return ( 
-        <section className="relative w-full flex flex-col gap-12 h-[83vh]">
+        <section className="relative w-full flex flex-col gap-12 h-fit xl:h-[83vh]">
                 <h1 className="text-center font-bold text-3xl lg:text-4xl text-react w-full mt-8 underline underline-offset-8">Contact</h1>
                 <motion.div className={`text-center flex flex-col gap-6 lg:gap-12 items-center w-4/5 text-white ${submitted ? "" : ""} m-auto`}
                                 initial={{opacity:0, y:-50}}

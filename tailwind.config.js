@@ -10,6 +10,9 @@ module.exports = {
         "poppins":["Poppins", "sans-serif"],
         "body":["Lato","sans-serif"]
       },
+      backgroundImage:{
+        "main":"url('/src/assets/oriental.png')"
+      },
       screens: {
         "sm-0":"480px",
         "sm": '570px',
@@ -26,7 +29,7 @@ module.exports = {
       "react": "#908a83",
       "dark" : "#21222A",
       "light":"#f5f7f2",
-      "body":"#3b4f4f"
+      "body":"#4b4f4f"
     },
     boxShadow:{
       "card":"0 5px 15px rgba(0,0,0,0.35)"

@@ -19,7 +19,7 @@ export const iconsArray:IconData[] = [
     {
         src:GmailIcon,
         alt:"G-mail logo",
-        link:"mailto:jawad.nazir248@gmail.com"
+        link:"mailto:jawad.nazir124@gmail.com"
     },
     {
         src:LinkedIn,
