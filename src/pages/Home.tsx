@@ -19,15 +19,16 @@ const Home: React.FC = () => {
       </motion.li>
     );
   });
+
   return (
-    <motion.section className="relative w-full h-[83vh]">
-      <div className="grid grid-rows-4 h-full">
-        <h1 className="text-center font-bold text-2xl lg:text-4xl text-react mt-8 underline underline-offset-8 row-start-1">
+    <motion.section className="relative w-full h-full">
+      <div className="flex flex-col items-center h-full">
+        <h1 className="absolute text-center font-bold text-2xl lg:text-4xl text-react top-8 underline underline-offset-8 ">
           Home
         </h1>
-        <motion.div className="m-auto self-center row-start-2 row-end-4 lg:justify-center flex flex-col md:items-center max-w-[45rem] w-4/5 relative bottom-5 md:bottom-0">
+        <motion.div className="my-auto lg:justify-center flex flex-col md:items-center max-w-[45rem] w-4/5 ">
           <motion.h2
-            className="text-5xl md:text-6xl xl:text-[4.3rem] 2xl:text-[4.8rem] font-bold font-poppins text-title"
+            className="text-5xl md:text-6xl xl:text-[4.3rem] 2xl:text-[4.5rem] font-bold font-poppins text-title"
             initial={{ opacity: 0, y: y }}
             animate={{
               opacity: 1,
@@ -78,7 +79,7 @@ const Home: React.FC = () => {
           <motion.a
             href={require("../assets/jawad_resume.pdf")}
             download="Resume.pdf"
-            className="relative p-[.8rem] xl:p-4 w-fit mt-16 text-white before:border-2 before:border-react 
+            className="relative p-[.8rem] xl:p-4 w-fit top-12 lg:top-[5rem] text-white before:border-2 before:border-react 
                                         cursor-pointer before:absolute before:w-full before:h-full bg-body before:left-[4px] before:bottom-[4px]
                                         rounded-lg before:rounded-lg shadow-card 2xl:text-lg 2xl:px-4
                                         "
@@ -96,8 +97,8 @@ const Home: React.FC = () => {
         </motion.div>
 
         <motion.ul
-          className="flex w-full justify-evenly items-center md:max-w-[25rem] gap-2 self-end mt-auto mx-auto p-3 
-                                bg-[#3b4f4f] md:rounded-xl md:mb-4 shadow-card relative row-start-4"
+          className="flex w-full justify-evenly items-center md:max-w-[25rem] gap-2 mx-auto p-3 
+                                bg-body md:rounded-xl md:mb-4 shadow-card relative"
           initial={{ opacity: 0, y: -y }}
           animate={{ opacity: 1, y: 0, transition: { delay: delay + 0.8 } }}
         >

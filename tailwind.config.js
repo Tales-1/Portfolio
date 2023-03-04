@@ -29,7 +29,7 @@ module.exports = {
       "react": "#908a83",
       "dark" : "#21222A",
       "light":"#f5f7f2",
-      "body":"#4b4f4f"
+      "body":"#3b4f4f"
     },
     boxShadow:{
       "card":"0 5px 15px rgba(0,0,0,0.35)"
