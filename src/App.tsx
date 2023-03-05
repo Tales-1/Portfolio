@@ -9,7 +9,7 @@ import ViewProject from "./pages/projects/ViewProject";
 const App: React.FC = () => {
   const location = useLocation();
   const {pathname} = location
-  const height = pathname === "/projects" ? "h-fit" : "h-[80vh]"
+  const height = pathname === "/projects" ? "h-fit" : pathname === "/about" ? "h-fit lg:h-[80vh]" : "h-[80vh]"
   return (
     <div className="relative flex flex-col min-h-[100vh] z-0 w-full bg-body">
       <Header />
