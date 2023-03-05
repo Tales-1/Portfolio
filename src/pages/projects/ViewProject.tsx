@@ -8,7 +8,7 @@ const ViewProject:React.FC = () => {
      
     return ( 
         <section className="flex flex-col w-full m-auto items-center h-fit gap-12 pb-12">
-            <h1 className="text-3xl mt-12 text-3xl lg:text-4xl text-react underline underline-offset-8">{currentProject?.name}</h1>
+            <h1 className="text-3xl mt-12 lg:text-4xl text-react underline underline-offset-8">{currentProject?.name}</h1>
             <div className="flex flex-col w-3/4 gap-6">
                 <p className="text-sm lg:text-base font-bold">Duration: {currentProject?.dates}</p>
                 <p className="text-sm lg:text-base font-body leading-[24px]">
