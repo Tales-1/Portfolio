@@ -77,7 +77,7 @@ const Home: React.FC = () => {
           </motion.p>
 
           <motion.a
-            href={require("../assets/jawad_resume.pdf")}
+            href={require("../assets/jawad-resume.pdf")}
             download="Resume.pdf"
             className="relative p-[.8rem] xl:p-4 w-fit top-12 lg:top-[5rem] text-white before:border-2 before:border-react 
                                         cursor-pointer before:absolute before:w-full before:h-full bg-body before:left-[4px] before:bottom-[4px]
