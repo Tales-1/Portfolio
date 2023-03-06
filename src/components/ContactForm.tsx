@@ -1,12 +1,12 @@
-import { useState } from "react"
+import { useState } from "react";
 type Props = {
-  handleSubmit:() => void
-}
+  handleSubmit: () => void;
+};
 
-const FORM_ENDPOINT = "https://public.herotofu.com/v1/e93194f0-72f8-11ed-a126-b172cf164538"; // TODO - fill on the later step
+const FORM_ENDPOINT =
+  "https://public.herotofu.com/v1/e93194f0-72f8-11ed-a126-b172cf164538"; // TODO - fill on the later step
 
-const ContactForm:React.FC<Props> = ({handleSubmit}) => {
- 
+const ContactForm: React.FC<Props> = ({ handleSubmit }) => {
   return (
     <form
       action={FORM_ENDPOINT}
@@ -20,7 +20,7 @@ const ContactForm:React.FC<Props> = ({handleSubmit}) => {
           type="text"
           placeholder="Your name"
           name="name"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="p-1 lg:p-2 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
           required
         />
       </div>
@@ -29,7 +29,7 @@ const ContactForm:React.FC<Props> = ({handleSubmit}) => {
           type="email"
           placeholder="Email"
           name="email"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="p-1 lg:p-2 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
           required
         />
       </div>
@@ -37,14 +37,15 @@ const ContactForm:React.FC<Props> = ({handleSubmit}) => {
         <textarea
           placeholder="Your message"
           name="message"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="p-1 lg:p-2 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
           required
         />
       </div>
       <div className="mt-8 pt-0">
         <button
-          className="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-          type="submit">
+          className="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          type="submit"
+        >
           Send a message
         </button>
       </div>

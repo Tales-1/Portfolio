@@ -9,11 +9,11 @@ import ViewProject from "./pages/projects/ViewProject";
 const App: React.FC = () => {
   const location = useLocation();
   const {pathname} = location
-  const height = pathname === "/projects" ? "h-fit" : pathname === "/about" ? "h-fit lg:h-[80vh]" : "h-[80vh]"
+  
   return (
     <div className="relative flex flex-col min-h-[100vh] z-0 w-full bg-body">
       <Header />
-      <main className={`flex flex-col items-center z-10 w-full mt-2 ${height} lg:w-[70%] mx-auto bg-white lg:rounded-xl overflow-hidden shadow-card`}>
+      <main className={`flex flex-col items-center z-10 w-full mt-2 lg:w-[70%] mx-auto bg-white lg:rounded-xl overflow-hidden shadow-card`}>
         <Routes location={location} key={location.pathname}>
           <Route path="/">
             <Route index element={<Home />} />

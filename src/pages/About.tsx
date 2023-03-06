@@ -7,7 +7,7 @@ const About:React.FC = () => {
 
     return ( 
             <section className="relative flex flex-col 2xl:h-[83vh]">
-                <h1 className="mt-8 text-center font-bold text-3xl lg:text-4xl text-react underline underline-offset-8">My Story</h1>
+                <h1 className="mt-8 text-center font-bold text-2xl xl:text-3xl text-react underline underline-offset-8">My Story</h1>
                 <div className="flex flex-col-reverse w-3/4 max-w-[90rem] m-auto mt-8 2xl:m-auto pb-12 md:flex-row relative gap-14">
                     <motion.div 
                         className="relative w-3/5 max-w-[22rem] m-auto aspect-square border-2 border-react rounded-md"

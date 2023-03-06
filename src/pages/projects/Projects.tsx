@@ -31,7 +31,7 @@ const Projects:React.FC= () => {
                 style={{scaleY:scrollYProgress, originY:"top"}}>
             </motion.div>
                 
-            <h1 className="mt-8 text-center font-bold text-3xl lg:text-4xl text-react underline underline-offset-8">Projects</h1>
+            <h1 className="mt-8 text-center font-bold text-2xl xl:text-3xl text-react underline underline-offset-8">Projects</h1>
             <ul className="grid justify-center w-full gap-12 z-10">
                 <ProjectCards />
             </ul>

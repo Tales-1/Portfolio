@@ -31,7 +31,7 @@ const ProjectCards: React.FC = () => {
 
     return (
       <motion.li
-        className="flex flex-col lg-2:flex-row max-w-[70rem] w-4/5 sm:w-3/5 lg-2:w-5/6 m-auto"
+        className="flex flex-col lg-2:flex-row max-w-[70rem] w-4/5 sm:w-2/5 lg-2:w-5/6 m-auto"
         initial="rest"
         whileHover="hover"
         key={i}
@@ -61,7 +61,7 @@ const ProjectCards: React.FC = () => {
             {name}
           </h1>
 
-          <p className="col-start-1 col-span-full text-sm lg:text-base p-8 text-justify row-start-2 md:px-12 font-body text-light leading-7">
+          <p className="col-start-1 col-span-full text-sm xl:text-base p-8 text-justify row-start-2 md:px-12 font-body text-light leading-7">
             {description}
           </p>
 
