@@ -37,7 +37,7 @@ const Home: React.FC = () => {
             }}
           >
             <motion.span
-              className="block text-xs xl:text-sm xl:mb-3 text-react"
+              className="block text-xs xl:text-[0.81rem] xl:mb-3 text-react"
               initial={{ opacity: 0, y: y }}
               animate={{
                 opacity: 1,
