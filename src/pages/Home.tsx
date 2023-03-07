@@ -28,7 +28,7 @@ const Home: React.FC = () => {
         </h1>
         <motion.div className="my-auto lg:justify-center flex flex-col md:items-center max-w-[45rem] w-4/5 ">
           <motion.h2
-            className="text-4xl xl:text-[4.2rem] font-bold font-poppins text-title"
+            className="text-[2.4rem] xl:text-[4.2rem] font-bold font-poppins text-title"
             initial={{ opacity: 0, y: y }}
             animate={{
               opacity: 1,
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
             JAWAD NAZIR
           </motion.h2>
           <motion.span
-            className="text-sm md:text-[1.2rem] xl:text-[1.7rem] mt-4 xl:mt-8 text-react font-poppins underline underline-offset-8 decoration-dashed"
+            className="text-sm md:text-[1.1rem] xl:text-[1.7rem] mt-4 xl:mt-8 text-react font-poppins underline underline-offset-8 decoration-dashed"
             initial={{ opacity: 0, y: y }}
             animate={{
               opacity: 1,
