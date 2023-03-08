@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   });
 
   return (
-    <motion.section className="relative w-full h-[70vh] lg:h-[80vh]">
+    <motion.section className="relative w-full h-[75vh] lg:h-[80vh]">
       <div className="flex flex-col items-center h-full">
         <h1 className="absolute text-center font-bold text-2xl xl:text-3xl text-react top-8 underline underline-offset-8 ">
           Home
