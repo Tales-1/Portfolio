@@ -20,7 +20,7 @@ const ContactForm: React.FC<Props> = ({ handleSubmit }) => {
           type="text"
           placeholder="Your name"
           name="name"
-          className="p-1 lg:p-2 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="relative w-full rounded border-[1px] border-body bg-white p-[5px] text-sm text-gray-600 placeholder-gray-400 shadow outline-none focus:outline-none focus:ring lg:p-2"
           required
         />
       </div>
@@ -29,7 +29,7 @@ const ContactForm: React.FC<Props> = ({ handleSubmit }) => {
           type="email"
           placeholder="Email"
           name="email"
-          className="p-1 lg:p-2 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="relative w-full rounded border-[1px] border-body bg-white p-[5px] text-sm text-gray-600 placeholder-gray-400 shadow outline-none focus:outline-none focus:ring lg:p-2"
           required
         />
       </div>
@@ -37,13 +37,13 @@ const ContactForm: React.FC<Props> = ({ handleSubmit }) => {
         <textarea
           placeholder="Your message"
           name="message"
-          className="p-1 lg:p-2 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          className="relative w-full rounded border-[1px] border-body bg-white p-[5px] text-sm text-gray-600 placeholder-gray-400 shadow outline-none focus:outline-none focus:ring lg:p-2"
           required
         />
       </div>
       <div className="mt-8 pt-0">
         <button
-          className="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          className="mr-1 mb-1 rounded bg-red-500 px-6 py-3 text-xs font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:shadow-lg focus:outline-none active:bg-red-600"
           type="submit"
         >
           Send a message
