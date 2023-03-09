@@ -32,7 +32,7 @@ const NavLinks:React.FC<Props> = ({mobile, closeMenu,flex}) => {
     })
 
     return (
-            <ul className={`flex justify-center h-full gap-8 text-white ${flex} text-sm xl:text-base`}>
+            <ul className={`flex justify-center h-full gap-8 text-white ${flex} text-xs md:text-sm xl:text-base`}>
                 {displayLinks}
             </ul>  
     )
