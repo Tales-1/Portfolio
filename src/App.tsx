@@ -7,21 +7,20 @@ import Header from "./components/Header";
 import ViewProject from "./pages/projects/ViewProject";
 
 const App: React.FC = () => {
-  const location = useLocation();
-  const {pathname} = location
+  const location = useLocation()
   
   return (
-    <div className="relative flex flex-col min-h-[100vh] z-0 w-full bg-body">
+    <div className="relative z-0 flex min-h-[100vh] w-full flex-col bg-body">
       <Header />
-      <main className={`flex flex-col items-center z-10 w-full mt-2 lg:w-[70%] mx-auto bg-white lg:rounded-xl overflow-hidden shadow-card`}>
+      <main
+        className={`z-10 mx-auto mt-2 flex w-full flex-col items-center overflow-hidden bg-white shadow-card lg:w-[70%] lg:rounded-xl`}
+      >
         <Routes location={location} key={location.pathname}>
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="projects">
-              <Route index element={<Projects />} />
-              <Route path=":pageRoute" element={<ViewProject />} />
-            </Route>
+            <Route path="projects" element={<Projects />} />
+            <Route path="projects/:pageRoute" element={<ViewProject />} />
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
