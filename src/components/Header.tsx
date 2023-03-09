@@ -18,7 +18,7 @@ const Header:React.FC = () => {
 
     return ( 
         <>
-            <header className={`mx-auto flex gap-4 relative h-[8vh] lg:h-[10vh] w-full lg:w-[70%]`}>  
+            <header className={`mx-auto flex gap-4 relative h-[7vh] lg:h-[10vh] w-full lg:w-[70%]`}>  
                 <nav className="m-auto w-full flex justify-center items-center">
                  {mobile ? 
                  <>
