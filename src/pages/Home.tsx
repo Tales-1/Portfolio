@@ -37,7 +37,7 @@ const Home: React.FC = () => {
             }}
           >
             <motion.span
-              className="block text-xs text-react xl:mb-3 xl:text-[0.81rem]"
+              className="block text-xs text-react xl:mb-3 xl:text-[1rem]"
               initial={{ opacity: 0, y: y }}
               animate={{
                 opacity: 1,
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
               transition: { delay: delay + 0.3, duration: duration },
             }}
           >
-            Front-End Developer
+            .NET Developer
           </motion.span>
           <motion.p
             className="mt-12 block text-center text-xs text-[#282d35] md:w-[50ch] xl:text-base 2xl:text-lg lg-2:w-[65ch]"
@@ -71,9 +71,6 @@ const Home: React.FC = () => {
           >
             A Developer with a passion for creating simple and intuitive web
             experiences. <br />
-            <span className="mt-2 block">
-              I'm currently seeking a role as a Front-End Developer.
-            </span>
           </motion.p>
 
           <motion.a

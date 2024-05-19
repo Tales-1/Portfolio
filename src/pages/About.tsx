@@ -1,4 +1,4 @@
-import Profile from "../assets/pp_hd.jpg";
+import Profile from "../assets/pp_hd_two.jpeg";
 import { motion } from "framer-motion";
 
 const About: React.FC = () => {
@@ -32,22 +32,12 @@ const About: React.FC = () => {
           animate={{ opacity: 1, x: 0, transition: { duration: 0.7 } }}
         >
           <p className="dt:text-[1.1rem] font-body text-[0.9rem] leading-6 tracking-[.5px] text-black 2xl:text-lg">
-            Hello! I'm Jawad Nazir and I enjoy building web applications. My
-            passion for web development surfaced in November 2021 when, out of
-            curiosity, I decided to try HTML and CSS. A week later, that
-            curiosity whirled into a new-found passion.
-            <br />
-            <br />
-            In January 2022, I made a significant advancement in my learning
-            when I enrolled in freeCodeCamp's JavaScript course. After a month
-            of intense study, I leapt from pure theory to practice and haven't
-            looked back.
-            <br />
-            <br />
-            My passion and dedication to learning has led me from making
-            calculators in vanilla JS to building a full-stack e-commerce
-            website 10 months later! As a highly self-motivated individual, I am
-            always seeking new challenges and projects to take on.
+          I am a dedicated Software Developer with over a year of experience at Rubixx in Stafford, England. In my current role, I specialize in .NET Core, Azure DevOps, C#, 
+          and Entity Framework Core, leveraging the Model-View-Controller (MVC) architecture to build robust and scalable applications. 
+          <br />
+          <br />
+          I began my journey at Rubixx as a Junior Software Developer, quickly advancing due to my proficiency in Azure DevOps, .NET Framework, and MVC.
+          I am passionate about developing innovative solutions and continuously enhancing my technical skills to contribute effectively to my team and projects.
           </p>
         </motion.div>
       </div>
